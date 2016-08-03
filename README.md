@@ -26,6 +26,6 @@
 * See https://technet.microsoft.com/en-us/library/ms189336%28v=sql.105%29.aspx?f=255&MSPPError=-2147217396
 
 
-###Naming the transaction
+### Naming the transaction
 * Naming the transaction adds no value unless you are working with nested transactions that need to be dealt with in a complex way
 * see http://stackoverflow.com/a/1280701/1571103
