@@ -19,3 +19,8 @@
 * (for testing) send `WAITFOR DELAY '00:01' /* wait for 1 minute */`
 * Kill the app pool, or throw an exception
 * Result: Transaction rolled back automatically
+* 
+
+##Naming the transaction
+* Naming the transaction adds no value unless you are working with nested transactions that need to be dealt with in a complex way
+* see http://stackoverflow.com/a/1280701/1571103
