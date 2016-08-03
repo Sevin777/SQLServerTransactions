@@ -1,7 +1,7 @@
 # SQL Server Transactions
 
 ### Isolation Levels
-[Microsoft Documentation](https://msdn.microsoft.com/en-us/library/ms709374(v=vs.85).aspx)
+* [Microsoft Documentation](https://msdn.microsoft.com/en-us/library/ms709374(v=vs.85).aspx)
 * Deafult is READ COMMITTED
 
 ### Insert with manual transaction
