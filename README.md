@@ -13,9 +13,9 @@
     * Result: query times out, it is blocked by the open transaction
 
 
-## Modification with manual transaction and program is killed
+## Modification with manual transaction and program is killed or exception is thrown before commit called
 * Start a transaction
 * Perform an insert operation
 * (for testing) send `WAITFOR DELAY '00:01' /* wait for 1 minute */`
-* Kill the app pool
+* Kill the app pool, or throw an exception
 * Result: Transaction rolled back automatically
