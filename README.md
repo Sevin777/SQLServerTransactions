@@ -8,8 +8,8 @@
 * Start a transaction
 * Perform an insert operation
 * On a separate transaction: select the item that was just inserted with isolation level read uncommitted
-    * Rresult: item found
+    * Result: item found
 * On a separate transaction: select the item that was just inserted with normal isolation level
-    * Rresult: item found
+    * Result: query times out, it is blocked by the open transaction
 
 
