@@ -1,4 +1,4 @@
-# SQL Server Transactions
+# SQL Server Transactions *(.NET Usage)*
 
 ### Isolation Levels
 * [Microsoft Documentation](https://msdn.microsoft.com/en-us/library/ms709374(v=vs.85).aspx)
