@@ -19,7 +19,12 @@
 * (for testing) send `WAITFOR DELAY '00:01' /* wait for 1 minute */`
 * Kill the app pool, or throw an exception
 * Result: Transaction rolled back automatically
-* 
+
+
+## Nested transactions
+* Committing inner transactions is ignored by the SQL Server Database Engine. The transaction is either committed or rolled back based on the action taken at the end of the outermost transaction. If the outer transaction is committed, the inner nested transactions are also committed. If the outer transaction is rolled back, then all inner transactions are also rolled back, regardless of whether or not the inner transactions were individually committed.
+* See https://technet.microsoft.com/en-us/library/ms189336%28v=sql.105%29.aspx?f=255&MSPPError=-2147217396
+
 
 ##Naming the transaction
 * Naming the transaction adds no value unless you are working with nested transactions that need to be dealt with in a complex way
