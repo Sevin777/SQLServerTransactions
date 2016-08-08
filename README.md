@@ -4,7 +4,7 @@
 * [Microsoft Documentation](https://msdn.microsoft.com/en-us/library/ms709374(v=vs.85).aspx)
 * Deafult is READ COMMITTED
 
-### Insert with manual transaction
+### Manual transaction blocking tests
 * Start a transaction
 * Perform an insert operation
     * *Note: performing update operation appears to have exact same results in preliminary testing*
@@ -23,6 +23,7 @@
 ### Modification with manual transaction and program is killed or exception is thrown before commit called
 * Start a transaction
 * Perform an insert operation
+    * *Note: update and delete likely have the exact same results, have not tested*
 * (for testing) send `WAITFOR DELAY '00:01' /* wait for 1 minute */`
 * Kill the app pool, or throw an exception
 * Result: Transaction rolled back automatically
