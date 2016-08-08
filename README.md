@@ -11,6 +11,10 @@
     * Result: item found
 * On a separate transaction: select the item that was just inserted with normal isolation level
     * Result: query times out, it is blocked by the open transaction
+* On a separate transaction: insert another item in the same table
+    * Result: insert works fine (not blocked by open transaction)
+* On a separate transaction: run ANY update query on the same table
+    * Result: query times out, it is blocked by the open transaction. This occurs regardless of transaction isolation level, and regardless of the scope of the update query (even if the update query is only updating one item and it would not affect the open transaction)
 
 
 ### Modification with manual transaction and program is killed or exception is thrown before commit called
