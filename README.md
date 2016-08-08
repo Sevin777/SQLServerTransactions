@@ -7,6 +7,8 @@
 ### Insert with manual transaction
 * Start a transaction
 * Perform an insert operation
+    * *Note: performing update operation appears to have exact same affect in preliminary testing*
+    * 
 * On a separate transaction: select the item that was just inserted with isolation level read uncommitted
     * Result: item found
 * On a separate transaction: select the item that was just inserted with normal isolation level
